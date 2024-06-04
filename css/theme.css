@@ -1101,6 +1101,9 @@ nav.navigation-main .navigation-block ul li > ul li a {
 
 .owl-slider-header .item .btn {
   margin-top: 15px;
+  border-radius: 10px;
+  background-color: #0a0a0a48;
+  /* color: black; */
 }
 .btn.btn-lg {
   font-size: 14px;
@@ -1140,11 +1143,7 @@ nav.navigation-main .navigation-block ul li > ul li a {
   }
 }
 
-@media (max-width: 767px) {
-  .owl-slider-header .item .btn {
-    display: none;
-  }
-}
+ 
 
 .owl-slider-header .owl-controls .owl-buttons div span {
   color: white;
@@ -2752,7 +2751,7 @@ section {
 }
 
 .quotes.quotes-ligther {
-  background-color: #eeeeee;
+  background-color: #eeeeee; 
   color: black;
 }
 
