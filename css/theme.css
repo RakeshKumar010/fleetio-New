@@ -2743,7 +2743,7 @@ section {
     ----------------------------------
 */
 .quotes {
-  background-color: #006a9f;
+  background-color: #00486c;
   color: white;
   position: relative;
   background-size: cover;
@@ -2842,6 +2842,9 @@ section {
   position: relative;
   bottom: 0;
   margin-top: 50px;
+}
+.quotes p{
+  color: #d7d5d5;
 }
 
 /*  
