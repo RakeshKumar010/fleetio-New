@@ -623,7 +623,7 @@ margin: 0;
 }
 @media (max-width: 767px) {
   header.sticked {
-    position: absolute;
+    /* position: absolute; */
     background-color: #00486c;
   }
   
@@ -730,7 +730,7 @@ nav.navigation-main .toggle-menu {
   height: 50px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 10px;
   font-size: 27px;
   padding: 5px 10px;
   line-height: 36px;
@@ -943,15 +943,18 @@ nav.navigation-main .navigation-block ul li > ul li a {
     transition: all 0.3s;
   }
   nav.navigation-main .navigation-block.open {
-    background-color: #00486c;
+    background-color: #00486c21;
+    backdrop-filter: blur(4px);
+
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    height: 100vh;
   }
   nav.navigation-main .navigation-block ul li {
-    border-top: 1px solid #006a9f;
+    border-top: 0;
   }
   nav.navigation-main .navigation-block ul li a {
     position: relative;
