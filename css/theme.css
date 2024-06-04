@@ -612,10 +612,15 @@ margin: 0;
   }
   header.sticked nav.navigation-main .logo img {
     height: auto;
+    width: 100%;
+  }
+  #cafetria-logo{
     width: 160px;
   }
 }
-
+#mobile-cafetria-logo{
+  width: 26%;
+}
 @media (max-width: 767px) {
   header.sticked {
     position: absolute;
