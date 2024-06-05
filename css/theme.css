@@ -404,6 +404,10 @@ header.sticked {
   height: 100%;
   z-index: 0;
 }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 .fancybox .textbox {
   background: #fff;
   padding: 60px 40px;
@@ -421,6 +425,10 @@ header.sticked {
   color: #000000;
   margin-top: 0;
 }
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
 .leftside.fancybox {
   margin-right: -30%;
   margin-left: auto;
@@ -435,10 +443,55 @@ header.sticked {
   left: auto;
   right: 15px;
 }
+.pt-0 {
+  padding-top: 0 !important;
+}
+.profile-bio {
+  font-family: var(--font-secondary) !important;
+  font-size: 22px !important;
+  line-height: 1.5;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .gap-medium {
+      padding: 40px 0;
+  }
+}
+@media (max-width: 768px) {
+  .pt-xs-small {
+      padding-top: 30px !important;
+  }
+}
+@media (max-width: 768px) {
+  .fancybox .textbox {
+      padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .fancybox {
+      margin-left: 0;
+      margin-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .overlay-none.fancybox {
+      margin-right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .profile-bio {
+      font-size: 16px !important;
+      line-height: 1.3;
+      /* text-align: justify; */
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .title2 {
       font-size: 52px;
   }
+}
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .title2 {
@@ -451,12 +504,7 @@ header.sticked {
   margin-top: 0;
   padding: 5px;
 }
-.profile-bio {
-  font-family: var(--font-secondary) !important;
-  font-size: 22px !important;
-  line-height: 1.5;
-  font-weight: 500;
-}
+
 
 .bg-fix {
   background-attachment: fixed;
@@ -491,7 +539,584 @@ header.sticked {
   color: #000000;
   margin: 3rem 0 1rem 0;
 }
+@media (max-width: 768px) {
+  .imgbox h4 {
+      font-size: 22px;
+      margin: 1.5rem 0 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .imgbox p {
+      font-size: 14px;
+      line-height: 1.5;
+  }
+}
+@media (max-width: 768px) {
+  .imgbox {
+      margin-bottom: 3.5rem;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .container2 {
+      --bs-gutter-x: 3.5rem;
+  }
+}
+.footer-logo{
+  border-radius: 100%; width: 10%
+}
+ 
+.footer-main-logo{
+  width: 5%;
+  border-radius: 100%;
+}
+ 
+@media (max-width: 768px) {
+  .medium-title {
+      font-size: 22px !important;
+      margin-bottom: 1rem !important;
+      line-height: 1.3 !important;
+  }
+  #stats2 {
+   display: none;
+}
+.footer-logo{
+  width: 30%;
+}
+.footer-main-logo{
+  width: 10%;
+}
+}
+.container2 {
+  max-width: 1500px;
+}
+.container2 {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
  /* new code end  */
+ /* car code start  */
+ .car-hero-container{
+  display: flex;
+  margin-top: 150px;
+  padding-left: 67px;
+  padding-right: 67px;
+  position: relative;
+ }
+ .car-hero-container .hero-left{
+  width: 478px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+
+ }
+ .car-hero-container .plan-trip{
+  font-weight: 600;
+  font-size: 22px;
+ }
+ .car-hero-container .hero-heading{
+  line-height: 70px;
+  font-weight: 700;
+  font-size: 56px;
+  margin-top: 1rem;
+  color: black;
+ }
+ .car-hero-container .hero-heading span{
+  display: block;
+  background: #FACC15;
+  background: linear-gradient(to right, #FACC15 0%, #DB2777 100%);
+  background-clip: text;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+ }
+ .car-hero-container .img-right{
+width: 63%;
+position: absolute;
+top: 10px;
+right: 0;
+z-index: 3;
+ }
+ @media (max-width: 640px){
+  .car-hero-container{
+    padding: 20px;
+  }
+  .car-hero-container .img-right{
+    display: none;
+  }
+  .car-hero-container .plan-trip{
+    text-align: center;
+  }
+  .car-hero-container .hero-heading{
+    text-align: center;
+    font-size: 40px;
+    line-height: normal;
+  }
+  .hero-dec{
+    text-align: center;
+  }
+ }
+ .book-ride-btn{
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 48px;
+    padding-right: 48px;
+    /* --tw-bg-opacity: 1; */
+    background-color: #00486c;
+    border-radius: .375rem;
+    display: flex;
+    cursor: pointer;
+    text-transform: none;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+ }
+ /* CSS */
+.car-image2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  /* The following is a custom media query to hide the image on large screens */
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.car-container {
+  padding: 120px 67px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+@media (max-width: 640px) {
+  .car-container {
+    padding: 50px 30px;
+  }
+}
+.car-header {
+  text-align: center;
+  z-index: 99;
+}
+.car-title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.car-subtitle {
+  font-weight: 700;
+  margin-top: 12px;
+  font-size: 48px;
+  font-family: unset;
+}
+@media (max-width: 640px) {
+  .car-subtitle {
+    font-size: 36px;
+  }
+   
+}
+.car-content {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .car-content {
+    flex-direction: column;
+  }
+}
+.car-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 60%;
+  margin: auto;
+}
+.car-image {
+  height: 140px;
+  margin: auto;
+}
+.car-heading {
+  font-weight: 700;
+  font-size: 22px;
+}
+.car-description {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.car-details {
+  padding: 16px 67px;
+  max-width: 100%;
+}
+@media (max-width: 640px) {
+ 
+  .car-details {
+    padding: 0;
+  }
+  .car-item{
+    width: 100%;
+  }
+}
+.car-details .car-del-header {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+.car-details h1 {
+  font-weight: 500;
+  font-size: 22px;
+  text-wrap: nowrap;
+}
+.car-details h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 45px;
+}
+@media (max-width: 640px) {
+  .car-details h2 {
+      font-size: 36px;
+  }
+  .car-details .car-del-header{
+    width: 80%;
+  }
+}
+.car-details p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+}
+.car-details .vehicle-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.vehicle-options img{
+  width: 50%;
+}
+@media (max-width: 640px) {
+  .vehicle-options img{
+    width: 70%;
+  }
+}
+.car-details .vehicle-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 255px;
+}
+.car-details button {
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 19px;
+  color: white;
+  background-color: #00486c; /* Blue */
+  margin-bottom: 2px;
+}
+.car-details button:not(.bmw) {
+  background-color: #f8f9fa; /* Light gray */
+  color: black;
+}
+ 
+.car-banner {
+  display: flex;
+  position: relative;
+  gap: 20px;
+  background-color: #2D2D2D;
+  padding: 40px 67px;
+  align-items: center;
+}
+
+.car-banner-content {
+  color: white;
+  text-align: left;
+}
+
+.car-banner-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.car-banner-subtitle {
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.car-banner-highlight {
+  color: #00486c;
+}
+
+.car-banner-image {
+  width: 310px;
+}
+
+.car-banner-close-button {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .car-banner {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .car-banner {
+    padding: 40px 30px;
+  }
+  
+
+  .car-banner-title {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .car-banner-subtitle {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .car-banner-image {
+    width: 100%;
+  }
+}
+
+.wcu-container {
+  padding-bottom: 12px;
+  position: relative;
+  margin: 0 50px;
+}
+.wcu-image-main {
+  display: block;
+  margin: 3px auto;
+  position: relative;
+  z-index: 2;
+}
+.wcu-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.wcu-text-section {
+  display: flex;
+  flex-direction: column;
+  /* gap: 16px; */
+  width: 40%;
+}
+.wcu-services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 45%;
+}
+@media (max-width: 640px){
+  .wcu-container{
+    margin: 0 30px;
+  }
+  .wcu-image-main {
+    width: 100%;
+  }
+  .wcu-text-section{
+    width: 100%;
+  }
+  .wcu-services-section{
+    width: 100%;
+    margin-top: 6vh;
+  }
+}
+
+
+.wcu-heading-small {
+  font-weight: 600;
+  font-size: 22px;
+}
+.wcu-heading-large {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 58px;
+}
+.wcu-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #333;
+}
+.wcu-button {
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: #00486c;
+  padding: 13px 32px;
+  color: white;
+  border: 0;
+  margin-top: 24px;
+  box-shadow: 0 4px 8px rgba(25, 54, 84, 0.5);
+}
+
+.wcu-service {
+  display: flex;
+  gap: 28px;
+}
+.wcu-service-image {
+  align-self: start;
+}
+.wcu-service-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+.wcu-service-description {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 12px;
+  color: #333;
+}
+.wcu-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.testi-container {
+  padding: 10px 67px;
+  padding-top: 10px;
+  padding-bottom: 120px;
+}
+@media (max-width: 640px) {
+  .testi-container {
+    padding: 30px;
+  }
+}
+.testi-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 640px) {
+  .testi-header {
+    width: 90%;
+  }
+}
+.testi-title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.testi-main-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 46px;
+}
+@media (max-width: 992px) {
+  .testi-main-title {
+    font-size: 36px;
+  }
+}
+.testi-description {
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 640px) {
+  .testi-description {
+    font-size: 16px;
+  }
+}
+.testi-cards-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.testi-card {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .testi-card {
+    width: 390px;
+  }
+}
+.testi-quote {
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 640px) {
+  .testi-quote {
+    font-size: 16px;
+  }
+  .testi-card{
+    padding: 23px;
+  }
+}
+.testi-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  gap: 6px;
+}
+.testi-profile img {
+  border-radius: 50%;
+  width: 80px;
+}
+@media (max-width: 992px) {
+  .testi-profile img {
+    width: 60px;
+  }
+}
+ 
+.testi-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+@media (max-width: 640px) {
+  .testi-name {
+    font-size: 14px;
+  }
+}
+.testi-location {
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 640px) {
+  .testi-location {
+    font-size: 14px;
+  }
+}
+.testi-icon {
+  margin-left: auto;
+  font-size: 50px;
+  color: #4299e1;
+}
+ /* car code end  */
  .stats2-info p {
   color: #fff;
   font-size: 40px;
@@ -1071,8 +1696,8 @@ nav.navigation-main .navigation-block ul li > ul li a {
     transition: all 0.3s;
   }
   nav.navigation-main .navigation-block.open {
-    background-color: #00486c21;
-    backdrop-filter: blur(4px);
+    background-color: #021b28b2;
+    backdrop-filter: blur(10px);
 
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
