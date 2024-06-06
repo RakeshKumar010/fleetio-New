@@ -1,3 +1,4 @@
+// home 
 const heroSliderImg =document.querySelectorAll('.hero-slider-img')
 const homeHeroSection =document.querySelector('.home-hero-section')
 const imageRightPng =document.querySelector('#imageRightPng')
@@ -23,3 +24,4 @@ heroSliderImg[2].addEventListener('click',()=>{
     heroSliderImg[2].classList.add('hero-slider-active')
 
 })
+
