@@ -685,25 +685,7 @@ root {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   bottom: 0;
 }
-@media (max-width: 640px) {
-  .car-hero-container {
-    padding: 20px;
-  }
-  .car-hero-container .img-right {
-    display: none;
-  }
-  .car-hero-container .plan-trip {
-    text-align: center;
-  }
-  .car-hero-container .hero-heading {
-    text-align: center;
-    font-size: 40px;
-    line-height: normal;
-  }
-  .hero-dec {
-    text-align: center;
-  }
-}
+
 .box .text p {
   color: #ababab;
 }
@@ -2658,6 +2640,60 @@ section {
 .cafeteria-hero-setion{
   padding-top: 16vh;
 }
+.car-rent-closure-container{
+  display: flex;
+  /* position: relative; */
+  /* background-color: #ffffff00; */
+  /* backdrop-filter: blur(10px); */
+  /* box-shadow: 0 0 8px #555454; */
+  padding: 3vh 0;
+/* width: 200vw; */
+  gap: 55px;
+  transition: all 0.5s;
+}
+ 
+.car-closure-img-div img{
+  width: 200px;
+ cursor: pointer;
+transition: all 0.5s;
+  /* backdrop-filter:; */
+}
+.car-closure-img-div img:hover{
+  scale: 1.2;
+}
+ .right-left-icon-main{
+  position: relative;
+  z-index:3;
+margin: 19vh 0;
+ }
+ .right-left-icon-main #rightIcon{
+  position: absolute;
+  right: 0;
+  top:50%;
+  background-color: #ffffff88;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: 30px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 4;
+ }
+ .right-left-icon-main #leftIcon{
+  position: absolute;
+  left: 0;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  background-color: #ffffff88;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: 30px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+ }
+ 
+ 
 
 @media (max-width: 991px) {
   .frontpage-slider .container {
@@ -6634,3 +6670,42 @@ footer .footer-social .copyright {
 
 /* Version 1.1.0. 
  * Theme credit ElaThemes.com */
+ @media (max-width: 640px) {
+  .car-hero-container {
+    padding: 20px;
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .car-hero-container .img-right {
+    display: none;
+  }
+  .car-hero-container .hero-left{
+    width: 100%;
+  }
+  #carHeroImgCh{
+    position: static;
+    display: unset;
+    width: 98%;
+  }
+  .right-left-icon-main{
+    margin: 0;
+  }
+  .car-hero-container .plan-trip {
+    text-align: center;
+  }
+  .car-hero-container .hero-heading {
+    text-align: center;
+    font-size: 40px;
+    line-height: normal;
+  }
+  .hero-dec {
+    text-align: center;
+  }
+  nav.navigation-main .logo {
+
+    height: auto;
+    padding: 10px;
+  }
+}
