@@ -1637,14 +1637,14 @@ nav.navigation-main .logo > a {
 }
 
 nav.navigation-main .toggle-menu {
-  height: 50px;
   position: absolute;
   right: 0;
-  top: 10px;
-  font-size: 27px;
+  top: 50%;
+  font-size: 37px;
   padding: 5px 10px;
   line-height: 36px;
   color: white;
+  transform: translateY(-50%);
 }
 
 nav.navigation-main .toggle-menu .icon {
@@ -2627,6 +2627,7 @@ section {
 .frontpage-slider {
   padding: 0;
   background: #474747;
+  margin-top: 100px;
   /* Old browsers */
   background: -moz-linear-gradient(left, #474747 0%, #a0a0a0 100%);
   /* FF3.6-15 */
@@ -2700,6 +2701,10 @@ margin: 19vh 0;
     padding-left: 0;
     padding-right: 0;
     width: 100%;
+    
+  }
+  .frontpage-slider{
+    margin-top: 0;
   }
   .cafeteria-hero-setion{
     padding: 0;
