@@ -2638,9 +2638,7 @@ section {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#474747', endColorstr='#a0a0a0',GradientType=1 );
   /* IE6-9 */
 }
-.cafeteria-hero-setion{
-  padding-top: 16vh;
-}
+ 
 .car-rent-closure-container{
   display: flex;
   /* position: relative; */
@@ -2708,10 +2706,14 @@ margin: 19vh 0;
   }
   .cafeteria-hero-setion{
     padding: 0;
+    margin-top: 40px;
   }
 }
-
-
+@media (max-width: 591px) {
+  .cafeteria-hero-setion{
+  margin-top: 85px;
+  }
+}
 /*  
     ----------------------------------
     20. Image Blocks
