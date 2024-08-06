@@ -1037,6 +1037,7 @@ root {
   padding: 10px 67px;
   padding-top: 10px;
   padding-bottom: 120px;
+  margin-top: 30px;
 }
 @media (max-width: 640px) {
   .testi-container {
@@ -1060,6 +1061,7 @@ root {
 .testi-title {
   font-weight: 600;
   font-size: 22px;
+  margin-bottom: 0;
 }
 .testi-main-title {
   font-weight: 700;
@@ -1079,12 +1081,15 @@ root {
   .testi-description {
     font-size: 16px;
   }
+  .testi-cards-container{
+    flex-wrap: wrap
+  }
 }
 .testi-cards-container {
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
 .page-header .container p {
@@ -1172,7 +1177,7 @@ root {
   padding: 10px;
   width: 100%;
   border-radius: 10px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
