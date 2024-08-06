@@ -1305,6 +1305,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 .stats2-info i {
   color: #fff;
